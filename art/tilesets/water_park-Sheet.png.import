@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b31ub8mgjb0bp"
-path="res://.godot/imported/enemy1_frames.png-90eebb88a3173beeb42ccba2877672e3.ctex"
+uid="uid://jd6tmrxdlpd7"
+path="res://.godot/imported/water_park-Sheet.png-c22d791a341c2321c2e25e81b426a5d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/characters/enemy1_frames.png"
-dest_files=["res://.godot/imported/enemy1_frames.png-90eebb88a3173beeb42ccba2877672e3.ctex"]
+source_file="res://art/tilesets/water_park-Sheet.png"
+dest_files=["res://.godot/imported/water_park-Sheet.png-c22d791a341c2321c2e25e81b426a5d1.ctex"]
 
 [params]
 

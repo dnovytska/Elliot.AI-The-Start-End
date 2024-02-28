@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b31ub8mgjb0bp"
-path="res://.godot/imported/enemy1_frames.png-90eebb88a3173beeb42ccba2877672e3.ctex"
+uid="uid://fqh385fc2qsw"
+path="res://.godot/imported/outside_items.png-fbe61d9c7ed2d964b0cc1628261d993c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/characters/enemy1_frames.png"
-dest_files=["res://.godot/imported/enemy1_frames.png-90eebb88a3173beeb42ccba2877672e3.ctex"]
+source_file="res://art/tilesets/outside_items.png"
+dest_files=["res://.godot/imported/outside_items.png-fbe61d9c7ed2d964b0cc1628261d993c.ctex"]
 
 [params]
 

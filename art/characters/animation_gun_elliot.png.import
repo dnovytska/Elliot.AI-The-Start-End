@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b31ub8mgjb0bp"
-path="res://.godot/imported/enemy1_frames.png-90eebb88a3173beeb42ccba2877672e3.ctex"
+uid="uid://cngeqyw8uc8y2"
+path="res://.godot/imported/animation_gun_elliot.png-8f75020fad76c9db63a7a563d7f688ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/characters/enemy1_frames.png"
-dest_files=["res://.godot/imported/enemy1_frames.png-90eebb88a3173beeb42ccba2877672e3.ctex"]
+source_file="res://art/characters/animation_gun_elliot.png"
+dest_files=["res://.godot/imported/animation_gun_elliot.png-8f75020fad76c9db63a7a563d7f688ee.ctex"]
 
 [params]
 

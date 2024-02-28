@@ -1,0 +1,95 @@
+[gd_scene load_steps=13 format=3 uid="uid://3yxrl140eh41"]
+
+[ext_resource type="Texture2D" uid="uid://d3aeh18nwdmwg" path="res://art/characters/enemy2_frames.png" id="1_a4ogn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0qnwr"]
+atlas = ExtResource("1_a4ogn")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alhbg"]
+atlas = ExtResource("1_a4ogn")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ch1k6"]
+atlas = ExtResource("1_a4ogn")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_unlnd"]
+atlas = ExtResource("1_a4ogn")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_37x3h"]
+atlas = ExtResource("1_a4ogn")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pc1b4"]
+atlas = ExtResource("1_a4ogn")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dmuqe"]
+atlas = ExtResource("1_a4ogn")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ytp4"]
+atlas = ExtResource("1_a4ogn")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jnbhx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0qnwr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alhbg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ch1k6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_unlnd")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_37x3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pc1b4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dmuqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ytp4")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vahr3"]
+radius = 72.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uy3lm"]
+
+[node name="enemy_1" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jnbhx")
+animation = &"walk"
+frame_progress = 0.782605
+
+[node name="detectionarea" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detectionarea"]
+shape = SubResource("CircleShape2D_vahr3")
+one_way_collision_margin = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uy3lm")
